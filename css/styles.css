@@ -571,7 +571,73 @@ width: 206px;
 .comp-net-link:hover .comp-net-icon, 
 .comp-net-link:focus .comp-net-icon {
   fill: #ffffff;
+}
 
+.subscr-input-form {
+  display: flex; 
+  width: 570px;
+  font-weight: 700px;
+}
+
+.subscr-text {
+  font-size: 14px;
+  font-weight: 700px;
+  color: var(--color-one--);
+  display: flex;
+  margin-top: 0;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.subscr-form {
+  display: block;
+  width: 358px;
+  height: 50px;
+  color: var(--color-one--);
+  background-color:#2F303A;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  margin-right: 12px;
+  padding-left: 16px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.subscr-form:focus {
+  border: 1px solid var(--color-two--);
+  outline: transparent;
+}
+
+.subscr-icon {
+  fill: var(--color-one--);
+  margin-left: 10px;
+  margin-right: 28px;
+}
+
+.subscr-form::placeholder {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.subscr-btn {
+  display: flex; 
+  width: 200px;
+  height: 50px;
+  background-color: var(--color-two--);
+  color: var(--color-one--);
+  font-size: 16px;
+  font-weight: 700px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-color: transparent;
+  align-items: center;
+  justify-content: center;
+  padding-left: 28px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  cursor: pointer;
 }
 
 /*------------------------ BACKDROP DESIGN--------------------*/
@@ -890,7 +956,9 @@ padding: 40px;
   color: var(--color-two--);
 }
 .input-check {
-  display: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
 }
 
 .check-icon{
