@@ -585,47 +585,6 @@ position: fixed;
 transition: opacity 500ms cubic-bezier(0.25, 0.46, 0.45, 0.94), visibility 500ms;
 }
 
-.modal-window {
-height: 581px;
-width: 528px;
-background-color: var(--color-one--);
-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-border-radius: 4px;
-position: absolute;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%) scale(1) rotate(0);
-transition: transform 400ms linear, height 500ms linear;
-}
-
-.backdrop.is-hidden .modal-window {
-  transform: translate(-50%,-50%) scale(0) rotate(-180deg);
-  transition: transform 400ms linear;
-}
-
-.modal-button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  top: 8px;
-  right: 8px;
-  height: 30px;
-  width: 30px;
-  border-radius: 50%;
-  background-color: var(--color-one--);
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-
-}
-
-.is-hidden {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-}
-
-
 /*------------------------ PORTFOLIO PAGE DESIGN--------------------*/
 .current-link {
   color: var(--color-two--);
@@ -746,4 +705,126 @@ transform: translateY(0);
 
 a {
   text-decoration: none;
+}
+
+/*------------------------ MODAL WINDOW--------------------*/
+.modal-window {
+height: 581px;
+width: 528px;
+background-color: var(--color-one--);
+box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 4px;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%) scale(1) rotate(0);
+transition: transform 400ms linear, height 500ms linear;
+padding: 40px;
+}
+
+.backdrop.is-hidden .modal-window {
+  transform: translate(-50%,-50%) scale(0) rotate(-180deg);
+  transition: transform 400ms linear;
+}
+
+.modal-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-color: var(--color-one--);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.modal-title{
+  font-size: 20px;
+  color: var(--color-three--);
+  display: block;
+  text-align: center;
+  margin-bottom: 12px;
+  margin-top: 0;
+}
+.input-form{
+  display: block;
+  width: 100%;
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  font-size: 12px;
+  color: rgba(117, 117, 117, 0.5);
+  padding-left: 42px;
+}
+.input-title{
+  display: block;
+  font-size: 12px;
+  color: var(--color-four--);
+  margin-bottom: 4px;
+}
+.input-form-comment{
+  display: block;
+  font-size: 12px;
+  color: var(--color-four--);
+  height: 120px; 
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  margin-bottom: 74px;
+  padding-left: 16px;
+  padding-top: 12px;
+}
+.input-form-comment::placeholder {
+  display: block;
+  font-size: 12px;
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.form-btn{
+  display: flex;
+  color: var(--color-one--);
+  font-size: 16px;
+  background-color: var(--color-two--);
+  letter-spacing: 0.06em;
+  align-items: center;
+  border-color: transparent;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  width: 200px;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 52px;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-btn:hover,
+.form-btn:focus{
+  background-color:#188CE8;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.input-field:not(:last-of-type){
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.input-icon{
+  position: absolute;
+  left: 12px;
+  top: 50%;
+
 }
