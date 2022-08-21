@@ -31,9 +31,7 @@ ul {
   padding: 0;
   margin: 0;
 }
-/* .link-design {
-  text-decoration: none;
-} */
+
 .logo-link {
   text-decoration: none;
 }
@@ -576,16 +574,15 @@ width: 206px;
 .subscr-input-form {
   display: flex; 
   width: 570px;
-  font-weight: 700px;
+  margin-top: 20px;
 }
 
 .subscr-text {
   font-size: 14px;
-  font-weight: 700px;
+  font-weight: 700;
   color: var(--color-one--);
-  display: flex;
   margin-top: 0;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
   text-transform: uppercase;
 }
 
@@ -626,7 +623,7 @@ width: 206px;
   background-color: var(--color-two--);
   color: var(--color-one--);
   font-size: 16px;
-  font-weight: 700px;
+  font-weight: 700;
   padding-top: 10px;
   padding-bottom: 10px;
   border-radius: 4px;
